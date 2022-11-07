@@ -1,15 +1,14 @@
 const express = require("express");
 const app = express();
-const notifier = require("node-notifier");
 const port = 3000;
 
 app.use(express.json());
 
 // POST /webhook
 app.post("/webhook", (req, res) => {
-  const webhook = req.body;
+  const payload = req.body;
 
-  console.log("webhook:", webhook);
+  console.log("payload:", payload);
 
   return res.status(200).json();
 });

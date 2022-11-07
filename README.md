@@ -1,7 +1,7 @@
-# Discord Notifications - USDT Transfers
+# Discord Notifications - Polygon donation event
 
-Blockchain Discord Bot Notifications for USDT transfers. This project is from a
-Moralis Web3 tutorial [found here](https://youtu.be/GiDXKT_AAIs).
+Blockchain Discord Bot Notifications for Polygon event (donation). This project
+is from a Moralis Web3 tutorial [found here](https://youtu.be/GiDXKT_AAIs).
 
 ## Setup project:
 
@@ -65,4 +65,35 @@ Moralis Web3 tutorial [found here](https://youtu.be/GiDXKT_AAIs).
 
 5. Setup Moralis:
 
-6. Watch the notifications come in
+   1. Go to your [Moralis Dashboard](https://admin.moralis.io/)
+
+      _You can create a Moralis account here: https://admin.moralis.io/register_
+
+   2. Go to [Streams](https://admin.moralis.io/streams):
+
+      - Navigate to `"New Stream"` -> `"Create From Scratch"`
+
+   3. Fill in the following **Stream Details**:
+
+      ```yml
+      ## TODO
+      ```
+
+   4. When done:
+
+      - Create Stream:
+
+        Click `Create Stream` to finish creating the stream
+
+        - you should see items streaming in when activity happens
+
+      - Pause Stream:
+
+        When done testing, `Pause Stream` by hovering over the 3 dots (...) icon
+
+      - Activate Stream:
+
+        To start stream, `Activate Stream` by hovering over the 3 dots (...)
+        icon
+
+6. TODO

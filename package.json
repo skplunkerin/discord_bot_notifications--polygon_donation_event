@@ -1,7 +1,7 @@
 {
   "name": "discord_notifications",
   "version": "1.0.0",
-  "description": "Discord Bot Notifications for USDT transfers - Moralis web3 tutorial",
+  "description": "Discord Bot Notifications for Polygon donation event - Moralis web3 tutorial",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
@@ -10,7 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "discord.js": "^14.6.0",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "moralis": "^2.7.1",
     "nodemon": "^2.0.20"
   }
 }
