@@ -68,21 +68,28 @@ is from a Moralis Web3 tutorial [found here](https://youtu.be/GiDXKT_AAIs).
 
 5. Test your project is running:
 
+   > **IMPORTANT:** The project rejects invalid requests _(requests not from_ > _your Moralis stream)_;
+   >
+   > To test this using the below `cURL` _(or Postman)_, comment out the
+   > `Moralis.Streams.verifySignature({...})` section in `index.js`.
+
    You can curl _(see below)_ or use a service like Postman to confirm the
    endpoints are functioning. I recommend doing this before you set up an
    external service (like Moralis) to point to your project.
 
    - **Localhost test:**
 
+     > _Replace `{{CHECK webhook-body_sample.json FOR EXAMPLE PAYLOAD}}` with_ > _the actual example payload._
+
      ```sh
      curl --location --request POST 'localhost:3000/webhook' \
      --header 'Content-Type: application/json' \
-     --data-raw '{
-         "time": "hamster time"
-     }'
+     --data-raw '{{CHECK webhook-body_sample.json FOR EXAMPLE PAYLOAD}}'
      ```
 
    - **Ngrok test:**
+
+     > _Replace `{{CHECK webhook-body_sample.json FOR EXAMPLE PAYLOAD}}` with_ > _the actual example payload._
 
      Get your `https` forwarding url from your `ngrok` session, and replace
      `{ngrok_url}` below:
@@ -90,9 +97,7 @@ is from a Moralis Web3 tutorial [found here](https://youtu.be/GiDXKT_AAIs).
      ```sh
      curl --location --request POST '{ngrok_url}/webhook' \
      --header 'Content-Type: application/json' \
-     --data-raw '{
-         "time": "hamster time"
-     }'
+     --data-raw '{{CHECK webhook-body_sample.json FOR EXAMPLE PAYLOAD}}'
      ```
 
 6. Setup Moralis:
@@ -227,8 +232,7 @@ is from a Moralis Web3 tutorial [found here](https://youtu.be/GiDXKT_AAIs).
 
              - Click `Write`
 
-        - you should see items streaming in when activity happens
-        - you should see items streaming in when activity happens
+        - You should see items streaming in when the transaction finishes
 
    5. When done:
 
@@ -240,5 +244,3 @@ is from a Moralis Web3 tutorial [found here](https://youtu.be/GiDXKT_AAIs).
 
         To start stream, `Activate Stream` by hovering over the 3 dots (...)
         icon
-
-7. TODO
