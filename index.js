@@ -32,7 +32,6 @@ app.post("/webhook", async (req, res) => {
       2
     )} MATIC!`;
     channel.send(msg);
-    // console.log("body:", body);
     console.log(msg);
 
     return res.status(200).json();
