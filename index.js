@@ -1,18 +1,39 @@
 const express = require("express");
 const app = express();
+const Moralis = require("moralis").default;
 const port = 3000;
+require("dotenv").config();
 
 app.use(express.json());
 
 // POST /webhook
 app.post("/webhook", (req, res) => {
-  const payload = req.body;
+  // see `./webhook-body_sample.json` for an example.
+  const { body, headers } = req;
 
-  console.log("payload:", payload);
+  try {
+    Moralis.Streams.verifySignature({
+      body,
+      signature: headers["x-signature"],
+    });
 
-  return res.status(200).json();
+    console.log("========================");
+    console.log("body:", body);
+    console.log("--------------------");
+    console.log("abi.inputs:", body.abi[0].inputs);
+    console.log("========================");
+    return res.status(200).json();
+  } catch (e) {
+    console.log("Invalid Request");
+
+    return res.status(400).json();
+  }
 });
 
-app.listen(port, () => {
-  console.log("Listening to streams");
+Moralis.start({
+  apiKey: process.env.MORALIS_APIKEY,
+}).then(() => {
+  app.listen(port, () => {
+    console.log("Listening to streams");
+  });
 });
