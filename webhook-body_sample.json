@@ -1,0 +1,61 @@
+{
+  "confirmed": false,
+  "chainId": "0x11111",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "Donate",
+      "type": "event"
+    }
+  ],
+  "streamId": "111e11dd-1dd1-1111-11a1-11dde1e1e1d1",
+  "tag": "moralis, youtube, tutorial, polygon",
+  "retries": 0,
+  "block": {
+    "number": "11111111",
+    "hash": "0x1f1111a1111fb1111bcc1111111f11111c11a1aa11111e11ab1bf1111d1ffa11",
+    "timestamp": "1111111111"
+  },
+  "logs": [],
+  "txs": [
+    {
+      "hash": "0xe1a1af111a1d111111e1111aa111a111111dbb11f111f1c11eff111dbc1111b0",
+      "gas": "52689",
+      "gasPrice": "1500000010",
+      "nonce": "0",
+      "input": "0xd111dad1",
+      "transactionIndex": "4",
+      "fromAddress": "0x1a1111111b111111111acf11fb11111b11111c11",
+      "toAddress": "0xbd317b46a004ccf0e1773dbfcee89e77e32d2db9",
+      "value": "10000000000000000",
+      "type": "2",
+      "v": "1",
+      "r": "11111111111111111111111111111111111111111111111111111111111111111111111111111",
+      "s": "11111111111111111111111111111111111111111111111111111111111111111111111111111",
+      "receiptCumulativeGasUsed": "695002",
+      "receiptGasUsed": "34687",
+      "receiptContractAddress": null,
+      "receiptRoot": null,
+      "receiptStatus": "1"
+    }
+  ],
+  "txsInternal": [],
+  "erc20Transfers": [],
+  "erc20Approvals": [],
+  "nftApprovals": { "ERC1155": [], "ERC721": [] },
+  "nftTransfers": []
+}
