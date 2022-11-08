@@ -14,6 +14,25 @@ is from a Moralis Web3 tutorial [found here](https://youtu.be/GiDXKT_AAIs).
        Can be found by logging into your Moralis account and going to the
        [Web3 APIs](https://admin.moralis.io/web3apis) page.
 
+     - `DISCORD_BOT_TOKEN`:
+
+       If you don't already know your Discord Bots token, you'll need to reset
+       it by:
+
+       - Go to your discord bot _([discord applications](https://discord.com/developers/applications/), click on your bot,_
+         _then click on `Bot` in the side menu)_
+       - Click `Reset Token` to get a new token
+       - Click `Copy`
+
+     - `DISCORD_CHANNEL_ID`:
+
+       For your Discord server, right-click the channel you want the bot to
+       message in, and click `Copy ID`.
+
+       - **NOTE:** if you don't see that option:
+         - Go to your Discord settings -> Advanced
+         - Toggle on `Developer Mode`
+
 2. Setup your Discord bot and server:
 
    _(Check [the tutorial video](https://www.youtube.com/watch?v=GiDXKT_AAIs&t=689s) for exact steps)_
